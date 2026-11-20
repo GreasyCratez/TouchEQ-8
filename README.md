@@ -4,7 +4,7 @@ An 8-band parametric EQ for standalone Akai MPCs (built on an MPC Key 61), in th
 "graph" EQs. It has a live filled curve, a spectrum analyser, and band points you drag with a finger. Each band is a
 row of four Q-Link knobs: Freq, Gain, Q, Type. User guide: [plugins/TouchEQ8/README.md](plugins/TouchEQ8/README.md).
 
-**Beta.** Tested on an MPC Key 61 (MPC OS 3.10.1); please report what you find on other models.
+**First release (0.1.3).** Tested on an MPC Key 61 (MPC OS 3.10.1); please report what you find on other models.
 
 ![BAND 1-4](docs/screenshots/toucheq-8.png)
 
@@ -32,8 +32,8 @@ installs, updates and removes it for you.
 To **update**, install the newer version the same way. To **remove** it, select it under **Installed**, press
 **Remove**, then **Apply**. Your projects are kept.
 
-**Can't find it?** Beta versions (GitHub pre-releases) are listed as **Experimental**, and the catalog hides
-Experimental plugins unless you choose to show them.
+**Can't find it?** The catalog lists a plugin only after its entry is merged and the nightly catalog build has
+run. Beta versions (GitHub pre-releases) show up only in the beta channel.
 
 ### By hand
 
