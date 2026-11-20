@@ -10,16 +10,40 @@ row of four Q-Link knobs: Freq, Gain, Q, Type. User guide: [plugins/TouchEQ8/REA
 
 ## Install
 
-Needs MPC OS 3.10.1 or later, with Preferences > Enhancements (Beta) > Enable Enhancements and External Plugin
-Support turned on.
+Needs MPC OS 3.10.1 or later. On the MPC: **Menu > Preferences > Enhancements**, tick **Enable Enhancements** and
+**External Plugin Support**, accept the warning, then restart the MPC.
 
-* **By hand:** download `TouchEQ-8-<version>-mpc-sdk.zip` from the
-  [Releases](../../releases) page, unzip it, copy the folder `GreasyCratez - VST - TouchEQ 8` into a folder named
-  `VST2 Plugins` at the root of an MPC drive, and restart the MPC. One folder works on every model (32 and 64-bit).
-* **Open MPC catalog:** the `-mpc-armv7.zip` (Key 61, Key 37, Live, Live II, One, X, Force) and `-mpc-aarch64.zip`
-  (64-bit models) are the catalog's per-CPU packages, with an installer; see https://open-mpc.github.io.
+### With the OpenMPC Plugin Manager (easiest)
 
-TouchEQ 8 is listed under External Plugins as an insert effect.
+The [Open MPC catalog](https://open-mpc.github.io/) lists TouchEQ 8 (id `toucheq-8`), and its Plugin Manager
+installs, updates and removes it for you.
+
+1. **Get the Plugin Manager onto the MPC (once).** Follow
+   [Install the Plugin Manager](https://open-mpc.github.io/install.html): download its `-mpc-sdk.zip`, unzip it, and
+   copy the folder `OpenMPC - VST - Plugin Manager` into `VST2 Plugins` on a USB stick, an SD card or the MPC's
+   internal drive.
+2. **Open it.** Add a Plugin track and choose **External VST Plugins > OpenMPC > Plugin Manager**.
+3. **Find TouchEQ 8.** Browse on the MPC's screen, or open the web address shown on the Plugin Manager's status line
+   on a phone or computer on the same Wi-Fi.
+4. **Install.** Pick TouchEQ 8, press **Apply**, and let the MPC restart once.
+5. **Use it.** On an audio, drum or plugin track, add an insert effect: **External VST Plugins > GreasyCratez >
+   TouchEQ 8**.
+
+To **update**, install the newer version the same way. To **remove** it, select it under **Installed**, press
+**Remove**, then **Apply**. Your projects are kept.
+
+**Can't find it?** Beta versions (GitHub pre-releases) are listed as **Experimental**, and the catalog hides
+Experimental plugins unless you choose to show them.
+
+### By hand
+
+Download `TouchEQ-8-<version>-mpc-sdk.zip` from the [Releases](../../releases) page and unzip it. Copy the folder
+`GreasyCratez - VST - TouchEQ 8` into a folder named `VST2 Plugins` at the root of an MPC drive, then restart the
+MPC. One folder works on every model, 32-bit and 64-bit. To remove it, delete the folder.
+
+The `-mpc-armv7.zip` (Key 61, Key 37, Live, Live II, One, X, Force) and `-mpc-aarch64.zip` (64-bit models) on each
+release are the catalog's packages. The Plugin Manager uses them, and each one also carries its own `install.sh` and
+`INSTALL.md` for installing over SSH.
 
 ## How the graph is made
 
