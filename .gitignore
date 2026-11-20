@@ -1,0 +1,12 @@
+# Fetched by build.sh / release.sh at pinned commits
+.deps/
+
+# Build output (build.sh regenerates all of it, including the skin)
+build/
+dist/
+release/
+plugins/*/build/
+plugins/*/skins/
+
+__pycache__/
+*.pyc
